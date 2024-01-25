@@ -6,27 +6,22 @@
    <title>Redirection</title>
   <link rel="stylesheet" href="styles.css">
 <script>
-  let i = 5;
+  
+let i = 5; // Valeur initiale de i (nombre de secondes)
+const intervalId = setInterval(decrementAndRedirect, 1000);
 
-function decrementAndDisplay() {
-    // Affichez la décrémentation du temps dans le corps de la page
-    document.body.textContent = 'Temps restant : ' + i;
+function decrementAndRedirect() {
+  i--;
 
-    // Décrémentez la variable i
-    i--;
-
-    // Vérifiez si le temps est écoulé
-    if (i >= 0) {
-        // Répétez le processus après 1 seconde
-        setTimeout(decrementAndDisplay, 1000);
-    } else {
-        // Redirigez vers une autre page web après le décompte
-        window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
-    }
+  if (i <= 0) {
+    clearInterval(intervalId);
+    document.body.textContent = 'Redirection vers la nouvelle page...';
+    window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
+  } else {
+    document.body.textContent = 'Redirection dans ' + i + ' secondes...';
+  }
 }
 
-// Démarrez le décompte initial
-decrementAndDisplay();
 
 
 </script>
