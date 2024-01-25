@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compte à rebours</title>
+  <title>Redirection</title>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       let i = 5; // Valeur initiale de i (nombre de secondes)
@@ -17,11 +17,11 @@
 
         if (i <= 0) {
           clearInterval(intervalId);
-          countdownElement.textContent = "Redirection vers la page des concours publiés...";
+          countdownElement.innerHTML = "Redirection vers la page des concours publiés...";
           window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
         } else {
-          countdownElement.innerHTML = "Redirection dans <span>" + i + "</span> secondes...";
-          titleElement.textContent = ''; // Effacer le contenu de <h1>
+          countdownElement.innerHTML = "Redirection dans <b>" + i + "</b> secondes...";
+          titleElement.innerHTML = ''; // Effacer le contenu de <h1>
         }
       }
     });
