@@ -3,31 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compte à rebours</title>
+  <title>Redirection...</title>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      let i = 5; // Valeur initiale de i (nombre de secondes)
-      const countdownElement = document.getElementById('countdown');
-      const titleElement = document.querySelector('h1');
-      const intervalId = setInterval(decrementAndDisplay, 1000);
-
-      function decrementAndDisplay() {
-        i--;
-
-        if (i <= 0) {
-          clearInterval(intervalId);
-          countdownElement.textContent = 'Redirection vers la nouvelle page...';
-          window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
-        } else {
-          countdownElement.textContent = 'Redirection dans ' + i + ' secondes...';
-          titleElement.textContent = ''; // Effacer le contenu de <h1>
-        }
-      }
-    });
+    window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
   </script>
 </head>
 <body>
-  <h1></h1>
-  <p id="countdown">Initialisation du compte à rebours...</p>
+  <p>Vous serez redirigé vers la nouvelle page...</p>
 </body>
 </html>
