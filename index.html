@@ -8,16 +8,27 @@
 <script>
   let i = 5;
 
-setTimeout(function() {
+function decrementAndDisplay() {
+    // Affichez la décrémentation du temps dans le corps de la page
+    document.body.textContent = 'Temps restant : ' + i;
+
     // Décrémentez la variable i
     i--;
 
-    // Redirigez vers une autre page web
-    window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
+    // Vérifiez si le temps est écoulé
+    if (i >= 0) {
+        // Répétez le processus après 1 seconde
+        setTimeout(decrementAndDisplay, 1000);
+    } else {
+        // Redirigez vers une autre page web après le décompte
+        window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
+    }
+}
 
-    // Affichez le contenu dans le corps (body) de la nouvelle page
-    document.body.textContent = i;
-}, 3000);
+// Démarrez le décompte initial
+decrementAndDisplay();
+
+
 </script>
 </head>
 <body>
