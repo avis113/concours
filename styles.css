@@ -5,7 +5,8 @@ font-family: arial;
 font-size: 30px;
 
 }
-#countdownElement {
+span {
 font-weight: bold;
+font-size: 10vw;
 
 }
