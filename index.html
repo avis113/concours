@@ -20,7 +20,7 @@
           countdownElement.textContent = "Redirection vers la page des concours publiés...";
           window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
         } else {
-          countdownElement.textContent = 'Redirection dans <span>' + i + '</span> secondes...';
+          countdownElement.innerHTML = "Redirection dans <span>" + i + "</span> secondes...";
           titleElement.textContent = ''; // Effacer le contenu de <h1>
         }
       }
