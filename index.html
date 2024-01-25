@@ -17,10 +17,10 @@
 
         if (i <= 0) {
           clearInterval(intervalId);
-          countdownElement.textContent = "Redirection vers les avis des concours publiés chaque jour...";
+          countdownElement.textContent = "Redirection vers la page des concours publiés...";
           window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
         } else {
-          countdownElement.textContent = 'Redirection dans ' + i + ' secondes...';
+          countdownElement.textContent = 'Redirection dans <span>' + i + '</span> secondes...';
           titleElement.textContent = ''; // Effacer le contenu de <h1>
         }
       }
