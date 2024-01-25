@@ -6,7 +6,7 @@
   <title>Compte à rebours et redirection</title>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      let i = 5; // Valeur initiale de i (nombre de secondes)
+      var i = 5; // Valeur initiale de i (nombre de secondes)
       const intervalId = setInterval(decrementAndRedirect, 1000);
 
       function decrementAndRedirect() {
