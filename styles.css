@@ -4,6 +4,7 @@ color: black;
 font-family: arial;
 font-size: 18px;
 }
-b{
-font-size: 100%;
+b#countdownElement{
+font-size: 10vw;
+color: red;
 }
