@@ -8,7 +8,7 @@
   <title>Redirection</title>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      let i = 5; // Valeur initiale de i (nombre de secondes)
+      let i = 5; 
       const countdownElement = document.getElementById('countdown');
       const titleElement = document.querySelector('h1');
       const intervalId = setInterval(decrementAndDisplay, 1000);
@@ -22,7 +22,7 @@
           window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
         } else {
           countdownElement.innerHTML = "Redirection dans <b><span style='color:red'>" + i + "</b></span> secondes...";
-          titleElement.innerHTML = ''; // Effacer le contenu de <h1>
+          titleElement.innerHTML = '';
         }
       }
     });
