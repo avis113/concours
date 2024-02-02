@@ -8,28 +8,15 @@
   <title>Redirection</title>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      let i = 5; 
-      const countdownElement = document.getElementById('countdown');
-      const titleElement = document.querySelector('h1');
-      const intervalId = setInterval(decrementAndDisplay, 1000);
-
-      function decrementAndDisplay() {
-        i--;
-
-        if (i <= 0) {
-          clearInterval(intervalId);
-          countdownElement.innerHTML = "Redirection vers la page des concours publiés...";
+         function decrementAndDisplay() {
           window.location.href = 'https://spumous-misalignmen.000webhostapp.com/';
-        } else {
-          countdownElement.innerHTML = "Redirection dans <b>" + i + "</b> secondes...";
-          titleElement.innerHTML = '';
-        }
+        
       }
+      decrementAndDisplay();
     });
   </script>
 </head>
 <body>
-  <h1></h1>
-  <p id="countdown">Initialisation...</p>
+  
 </body>
 </html>
